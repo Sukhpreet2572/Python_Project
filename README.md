@@ -1,6 +1,6 @@
 # 🕵️ Crime Data Analysis
 
-## 🎯 Overview
+## 🎯 Project Overview
 
 This project analyzes crime data to uncover patterns and trends across various dimensions such as time, location, offense types, and weapon usage. The objective is to provide actionable insights for law enforcement and policymakers.
 
