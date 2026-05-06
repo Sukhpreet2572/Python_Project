@@ -33,7 +33,7 @@ page = st.sidebar.radio("", ["Dashboard", "Prediction"])
 
 if page == "Dashboard":
 
-    st.title("📊 Crime Dashboard")
+    st.title("📊 Crime Data Analysis Dashboard")
 
     col1, col2, col3 = st.columns(3)
 
@@ -94,7 +94,7 @@ if page == "Dashboard":
 
 if page == "Prediction":
 
-    st.title("🔮 Crime Prediction")
+    st.title("🔮 Crime Prediction Dashboard")
 
     col1, col2 = st.columns(2)
 
