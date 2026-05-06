@@ -49,7 +49,7 @@ The analysis includes the following visualizations:
 3. ✅ **Neighborhood Analysis**: Specific neighborhood clusters exhibit higher crime rates, highlighting areas that may require targeted interventions.
 4. ✅ **Geographical Distribution**: The spatial analysis reveals clusters of crimes in particular wards, assisting in resource allocation for law enforcement.
 5. ✅ **Weapon Usage**: Analysis of violent crimes shows the prevalence of certain weapons, aiding in understanding the nature of these offenses.
-6. ✅ **Ward-Level Analysis**: Heatmaps of crime types by ward provide a visual  representation of crime distribution, facilitating strategic planning.
+6. ✅ **Ward-Level Analysis**: Heatmaps of crime types by ward provide a visual representation of crime distribution, facilitating strategic planning.
 
 ## 🛠️ Tools and Technologies
 
@@ -57,6 +57,7 @@ The analysis includes the following visualizations:
 - **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
 - **Environment**: Jupyter Notebook
 - **Version Control**: Git
+- **CI/CD** Docker automation test
 
 ## 🤝 Contribution
 
