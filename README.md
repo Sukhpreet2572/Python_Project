@@ -54,7 +54,7 @@ The analysis includes the following visualizations:
 ## 🛠️ Tools and Technologies
 
 - **Programming Language**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Stramlit
 - **Environment**: Jupyter Notebook
 - **Version Control**: Git
 - **CI/CD** Docker automation test
