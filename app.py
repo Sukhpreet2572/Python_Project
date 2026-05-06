@@ -9,7 +9,7 @@ import pandas as pd
 
 from model import load_and_preprocess, train_model, predict_crime
 
-st.set_page_config(page_title="Crime Prediction System", layout="wide")
+st.set_page_config(page_title="Crime Prediction System - DevOps Pipeline Working", layout="wide")
 
 # ---------- LOAD ----------
 @st.cache_data
