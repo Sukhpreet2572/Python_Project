@@ -138,3 +138,35 @@ def predict_crime(model, le_dict, target_le, input_data):
     predicted_crime = target_le.inverse_transform(pred)
 
     return predicted_crime[0]
+
+
+def predict_crime_proba(model, le_dict, target_le, input_data):
+    # Ensure correct feature order
+    features = list(le_dict.keys())
+
+    # Create dataframe with correct columns
+    input_df = pd.DataFrame([input_data])
+
+    # Reorder columns to match training
+    input_df = input_df[features]
+
+    # Encode safely
+    for col in features:
+        val = str(input_df[col][0])
+
+        if val in le_dict[col].classes_:
+            input_df[col] = le_dict[col].transform([val])
+        else:
+            input_df[col] = 0  # fallback
+
+    # Predict probability
+    proba = model.predict_proba(input_df)[0]
+    
+    # Map probability to classes
+    classes = target_le.classes_
+    class_probs = {cls: float(prob) for cls, prob in zip(classes, proba)}
+    
+    # Sort class probabilities descending
+    sorted_probs = dict(sorted(class_probs.items(), key=lambda item: item[1], reverse=True))
+    
+    return sorted_probs
