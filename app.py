@@ -123,7 +123,7 @@ df = load_data()
 model, le_dict, target_le = load_model(df)
 
 # ---------- SIDEBAR NAVIGATION ----------
-st.sidebar.image("https://img.icons8.com/color/150/police-badge.png", width=90)
+# st.sidebar.image("https://img.icons8.com/color/150/police-badge.png", width=90)
 st.sidebar.title("Crime Intel Engine")
 st.sidebar.markdown("Predictive crime analytics & spatial tactical intelligence dashboard.")
 page = st.sidebar.radio("Navigate Workspace:", ["Dashboard", "Prediction"])
